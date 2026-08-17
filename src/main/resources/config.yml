@@ -1,0 +1,8 @@
+# ==================== TowerWarsReborn 主配置 ====================
+# statTrackingEnabled: 是否启用玩家统计追踪（SQLite 存档 stats.db）
+# arenas: 已注册竞技场列表（每个名字对应 plugins/TowerWarsReborn/<名字>.yml）
+#         只有列在这里的竞技场才会被加载；用 /towerwars arena configure <名字> 新建。
+
+statTrackingEnabled: true
+arenas:
+  - "arena1"

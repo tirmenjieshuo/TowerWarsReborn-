@@ -1,0 +1,34 @@
+name: TowerWarsReborn
+version: '1.0-SNAPSHOT'
+main: io.github.pako25.towerWars.Main
+api-version: '1.21.4'
+commands:
+  towerwars:
+    description: TowerWars 主命令
+    usage: /towerwars
+    aliases: tw
+permissions:
+  towerwars.play:
+    description: 允许使用 /towerwars join <竞技场> 与 /towerwars leave 加入/离开游戏
+    default: true
+  towerwars.forcestart:
+    description: 允许在倒计时结束前强制开局（/towerwars forcestart）
+    default: op
+  towerwars.list:
+    description: 允许使用 /towerwars arena list 查看所有竞技场
+    default: true
+  towerwars.configure:
+    description: 允许使用 /towerwars configure <竞技场> 配置竞技场或新建竞技场
+    default: op
+  towerwars.debug:
+    description: 开发者调试权限（/towerwars debug 与 /towerwars increaseincome）
+    default: false
+  towerwars.placesign:
+    description: 允许玩家放置可点击的加入牌
+    default: op
+  towerwars.test:
+    description: 允许单人测试模式（/towerwars test <竞技场> 或编辑器"测试"按钮）
+    default: op
+  towerwars.usesign:
+    description: 允许玩家通过加入牌加入游戏
+    default: true
